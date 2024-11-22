@@ -1,6 +1,43 @@
 body {
     display: flex;
     flex-direction: column;
+    background-color: #010b19;
+    color: gainsboro;
+    font-family: sans-serif;
+    margin: 1em 3em 1em 3em;
+}
+
+p {
+    font-size: 2em;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+#resume {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#resume div {
+    width: 30em;
+}
+
+#about #resume img {
+    border-radius: 100%;
 }
 
 #projects {
@@ -16,5 +53,23 @@ li {
 }
 
 #projects li {
+    width: 20em;
+    height: 8em;
     padding: 2em;
+    margin: 1em;
+    /* border: 0.5em solid; */
+    /* border-color: #555555; */
+    background: linear-gradient(#0000FF, #000055);
+    border-radius: 1em;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: yellow;
+}
+
+#projects li a {
+    display: flex;
+    justify-content: center;
 }
