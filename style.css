@@ -4,6 +4,10 @@ body {
     background-color: #FFEEEE;
     color: #222222;
     font-family: sans-serif;
+    margin: 0;
+}
+
+main {
     margin: 1em 3em 1em 3em;
 }
 
@@ -25,6 +29,7 @@ p {
     display: flex;
     flex-direction: column;
     padding: 2em;
+    min-height: 20em;
 }
 
 #resume {
@@ -47,6 +52,7 @@ p {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    min-height: 30em;
 }
 
 li {
@@ -68,12 +74,13 @@ li {
 
 a {
     text-decoration: none;
-    color: #0000FF;
+    color: #000000;
 }
 
 #projects li a {
     display: flex;
     justify-content: center;
+    color: #0000FF;
 }
 
 .textWithLine {
@@ -88,4 +95,36 @@ a {
     font-size: 1.2em; 
     background:#FFEEEE; 
     padding:0 10px;
+}
+
+.title {
+    font-size: 1.6em;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1em;
+    margin: 0;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+    min-height: 10em;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: row;
+}
+
+#contacts a {
+    margin: 1em;
+}
+
+div p {
+    margin-top: -2em;
+    margin-bottom: 3em;
 }
