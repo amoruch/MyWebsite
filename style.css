@@ -14,8 +14,7 @@ main {
 header {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     margin: 2em;
     font-size: 1.5em;
@@ -25,11 +24,34 @@ p {
     font-size: 1.5em;
 }
 
+@keyframes anime_1 {
+    from {
+      margin-left: -10em;
+      opacity: 0%;
+    }
+    to {
+      margin-left: 0em;
+      opacity: 100%;
+    }
+}
+
+header p {
+    animation-duration: 1s;
+    animation-name: anime_1;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
 #about {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 2em;
     min-height: 20em;
+}
+
+#about p {
+    margin: 0em;
 }
 
 #resume {
@@ -39,7 +61,7 @@ p {
 }
 
 #resume div {
-    width: 25em;
+    max-width: 25em;
 }
 
 #about #resume img {
@@ -53,6 +75,7 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     min-height: 30em;
+    padding-inline-start: 0;
 }
 
 li {
@@ -112,19 +135,20 @@ footer div {
     flex-direction: column;
     text-decoration: none;
     align-items: center;
+    justify-content: space-around;
     min-height: 10em;
 }
 
 #contacts {
     display: flex;
     flex-direction: row;
+    min-height: auto;
 }
 
 #contacts a {
     margin: 1em;
 }
 
-div p {
-    margin-top: -2em;
-    margin-bottom: 3em;
+footer div p {
+    margin: 1em;
 }
