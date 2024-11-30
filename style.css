@@ -36,7 +36,7 @@ p {
 }
 
 header p {
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     animation-name: anime_1;
     animation-direction: alternate;
     animation-timing-function: ease;
@@ -82,6 +82,27 @@ li {
     list-style: none;
 }
 
+@keyframes anime_2 {
+    from {
+        margin-right: 10em;
+        opacity: 0%;
+    }
+    to {
+        margin-right: 1em;
+        opacity: 100%;
+    }
+}
+
+@keyframes anime_3 {
+    from {
+        margin-right: -100em;
+    }
+    to {
+        margin-right: 0em;
+    }
+}
+
+
 #projects li {
     width: 20em;
     height: 8em;
@@ -93,6 +114,20 @@ li {
     border-radius: 1em;
     box-shadow: 10px 5px 10px gray;
     font-family: sans-serif;
+}
+
+#projects li {
+    animation-duration: 2s;
+    animation-name: anime_2;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
+#projects {
+    animation-duration: 2s;
+    animation-name: anime_3;
+    animation-direction: alternate;
+    animation-timing-function: ease;
 }
 
 a {
