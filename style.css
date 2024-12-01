@@ -110,7 +110,7 @@ li {
     margin: 1em;
     /* border: 0.5em solid; */
     /* border-color: #555555; */
-    background: linear-gradient(#FFFF00, #FF0000);
+    background: linear-gradient(-45deg, #342377, #c3bbe2);
     border-radius: 1em;
     box-shadow: 10px 5px 10px gray;
     font-family: sans-serif;
@@ -140,6 +140,7 @@ a {
 #projects li a {
     display: flex;
     justify-content: center;
+    font-size: 1.2em;
     color: #0000FF;
 }
 
